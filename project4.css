@@ -1,0 +1,346 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #090000;
+    color:#fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/project4/ansh.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container1{
+    display: flex;
+    flex-direction: row;
+    padding:0px 0%;
+
+}
+
+.logo{
+    display: flex;
+    width: 100px;
+    height: 30px;
+}
+.logo h1{
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Noto Serif Hebrew', serif;
+    font-weight: 600;
+    margin:10px 0px;
+    font-size: 30px;
+}
+
+.nav{
+    width: 65%;
+
+}
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.nav ul li{
+    list-style: none;
+}
+.nav ul li a{
+    font-size: 20px;
+    color: #fff;
+    margin: 10px 30px;
+    text-decoration: none;
+    position: relative;
+}
+.nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.nav ul li a.active-nav::after{
+    width:100%;
+}
+.nav ul li a:hover::after{
+    width: 100%;
+}
+.headertext{
+    margin:0px 0px 0px 103px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    height:647px;
+    width: 709px;
+}
+span{
+    color: #ff004f;
+}
+.headertext1{
+    font-size: 22px;
+    height:36px;
+    width: 100%;
+}
+.headertext2{
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Noto Serif Hebrew', serif;
+    font-weight: 600;
+    font-size: 50px;
+    height:100px;
+    width: 100%;
+}
+
+
+#aboutme{
+    padding: 80px 0px;
+    color: #f0f0f0;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.about-col-1{
+     flex-basis:35% ;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+
+}
+.about-col-2{
+    flex-basis:60%;
+}
+#aboutme h2{
+    font-size: 60px;
+    font-weight: 600;
+}
+.about-me-content{
+    font-size: 18px;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0px;
+
+}
+.tab-links{
+    margin-right: 70px;
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 100%;
+}
+.tab-links:hover::after{
+    width: 100%;
+}
+.tab-contents{
+    height: 200px;
+}
+.tab-contents ul{
+    margin: 0px 0px 0px 0px;
+    height:144px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding:0px 0px;
+}
+.tab-contents li{
+    margin:0px 0px 0px 0px;
+    font-size: 23px;
+    list-style: none;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+
+#mywork h2{
+    margin: auto;
+    font-size: 60px;
+    font-weight: 600;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.work-list{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.work{
+    border-radius: 10px;
+    height: 400px;
+    width: 420px;
+    overflow: hidden;
+}
+.work img{
+    border-radius: 10px;
+    height: 400px;
+    width: 440px;
+}
+.work i{
+    height: 5px;
+    width: 5px;
+}
+.layer{
+    width: 380px;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    border-radius: 10px;
+    position: relative;
+    top: -423px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px 0px 20px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.layer h3{
+    font-size: 30px;
+    margin: 0px 0px 12px 0px;
+}
+.layer p{
+    margin: 0px 0px 20px 0px;
+    font-size: 18px;
+}
+.layer img{
+    height: 30px;
+    width: 30px;
+}
+
+.work:hover .layer{
+    height:420px;
+}
+.btna{
+    margin: 60px auto;
+
+}
+.btn{
+    text-decoration: none;
+    font-size: 17px;
+    height: 50px;
+    width: fit-content;
+    padding: 14px 50px;
+    border-color: #ff004f;
+    border-radius: 15px;
+    background-color: #090000;
+    color: #f0f0f0;
+    transition: 0.5s;
+}
+.btn:hover{
+    background-color: #ff004f;
+}
+
+
+#contactme{
+    display: flex;
+    flex-direction: row;
+
+}
+#contactme h2{
+    font-size: 60px;
+    font-weight: 600;
+}
+.contactleft{
+    padding:50px 0px 0px 20px;
+    height: 100%;
+    width: 40%;
+}
+.contactleft p{
+    font-size: 30px;
+    margin:0px 0px 46px 0px;
+}
+.contactleft p i{
+    color: #ff004f;
+    margin:0px 25px 0px 0px;
+    height: 25px;
+    width: 25px;
+}
+.contactleft a i{
+    color: #bbbaba;
+    font-size: 30px;
+    transition: 0.5s;
+    margin:0px 30px 0px 0px;
+
+    height: 25px;
+    width: 25px;
+}
+.contactleft a i:hover{
+    transform: translateY(-5px);
+    color: #ff004f;
+}
+.btn2{
+    text-decoration: none;
+    font-size: 17px;
+    height: 50px;
+    width: fit-content;
+    padding: 14px 50px;
+    border-color: #ff004f;
+    border-radius: 15px;
+    background-color: #090000;
+    color: #f0f0f0;
+    transition: 0.5s;
+    margin: 64px 0px 0px 0px;
+}
+.btn2:hover{
+    background-color: #ff004f;
+}
+
+
+.contactright{
+    width: 50%;
+}
+form{
+    margin-top: 46px;
+    display: flex;
+    flex-direction: column;
+}
+form input,textarea{
+    border: 0;
+    outline: none;
+    padding: 15px 10px;
+    margin: 15px 0px;
+    width: 100%;
+    background-color: #262626;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+h2,h3{
+    font-family: 'Roboto', sans-serif;
+}
+.headertext1,p,.tab-contents{
+    font-family: 'Merriweather', serif;
+}
+.contactleft p{
+    font-family: 'Noto Serif Hebrew', serif;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Hebrew&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e9c3fee238.js" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portoflio Website</title>
+</head>
+<link rel="stylesheet" href="project4.css">
+<body>
+    <section id="header">
+        <section class="container1">
+            <section class="logo">
+                <h1>Ansh <span>J.</span></h1>
+  
+            </section>
+            <section class="nav">
+            <ul>
+                <li><a href="#header" class="active-nav">Home</a></li>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#mywork">My Work</a></li>
+                <li><a href="#contactme">Contact Me</a></li>
+
+            </ul>
+            </section>
+        </section>
+        <section class="headertext">
+            <section class="headertext1">Frontend Web developer</section>
+            <section class="headertext2">Hi I am <span>Ansh</span> Jindal.</section>
+        </section>
+    </section>
+    <section id="aboutme">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/project4/me.png">
+                </div>
+                <div class="about-col-2">
+                    <h2>About Me</h2>
+                    <p class="about-me-content">Hi,I am Ansh Jindal,A student of JIIT Noida sector 62.I am a very hardworking and dedicated student as u can see form my CGPA
+                        also along with college i do web development and freelancing on the side.My main focus is on frontend development and making the 
+                        best UI/UX possible.Given below is some information about myself:-
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Academics','tab-link-1')" id="tab-link-1">Academics</p>
+                        <p class="tab-links" onclick="opentab('Education','tab-link-2')" id="tab-link-2">Education</p>
+                        <p class="tab-links" onclick="opentab('Skills','tab-link-4')" id="tab-link-4">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience','tab-link-3')" id="tab-link-3">Experience</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="Academics">
+                        <ul>
+                            <li><span>Class 10 : </span>95%</li>
+                            <li><span>Class 12 : </span>82%</li> 
+                            <li><span>JEE Marks : </span>95%</li>
+                            <li><span>CGPA (2 years) : </span>9.1</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="Education">
+                        <ul>
+                            <li><span>School : </span>Amity International School</li>
+                            <li><span>Btech & Mtech : </span>JIIT</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="Experience">
+                        <ul>
+                            <li><span>Internship : </span>NA</li>
+                            <li><span>Job : </span>NA</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="Skills">
+                        <ul>
+                            <li><span>Coding Languages : </span>C++,Python,C</li>
+                            <li><span>Web Develeopment : </span>HTML,CSS,JS,API integration</li>
+                            <li><span>Financial Accounting :</span>Basic Accounting,Checking Errors</li>
+
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="mywork">
+        <div class="container">
+            <h2>My Work</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/project4/gym.png">
+                    <div class="layer">
+                        <h3>Gym API</h3>
+                        <p>This website can help u find the right excersize for ur muscles without
+                            internet or without asking for a trainer.Data by API integration.
+                        </p>
+                        <a href="project3.html" target="_blank"><img src="images/project4/link.png"></i></a> 
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/project4/zomato.png">
+                    <div class="layer">
+                        <h3>Zomato Clone</h3>
+                        <p>This is a resposive website clone for zomato website just for practising my frontend,UI/UX 
+                            skills.Not a exact clone includes some modification.
+                        </p>
+                        <a href="project2.html" target="_blank"><img src="images/project4/link.png"></i></a> 
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/project4/back.png">
+                    <div class="layer">
+                        <h3>Hackathon Project</h3>
+                        <p>This is a Hackathon project themed "Back To The Future" this has a UI/UX 
+                            of 1800 and 1900 giving it a very retro vibe.
+                        </p>
+                        <a href="#header"><img src="images/project4/link.png"></i></a> 
+                    </div>
+                </div>
+            </div>
+            <a  class="btna"   href="#header"><button class="btn">See More</button></a>
+        </div>
+    </section>
+    <section id="contactme">
+        <div class="contactleft">
+
+            <h2>Contact Me</h2>
+            <p><i class="fa-solid fa-phone"></i>7291962631</p>
+            <p><i class="fa-solid fa-envelope"></i>anshjindal132@gmail.com</p>
+            <a href="https://instagram.com/anshj__?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/AnshJindal21" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <br>
+            <a  class="btna2" href="images/project4/exp7.pdf" download><button class="btn2" >Download CV</button> </a>
+        </div>
+        <div class="contactright">
+            <form action="project3-2.html">
+                <input type="text" placeholder="Enter Your Name" required>
+                <input type="text" placeholder="Enter Your Email" required>
+                <input type="text" placeholder="Enter Your Phone No" required>
+                <textarea rows="6" placeholder="Your message"></textarea>
+                <button class="btn" >Submit</button>
+            </form>
+        </div>
+    </section>
+    <script>
+        console.log("ji");
+        confirm("do u want to leave website");
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname,tablink){
+            document.getElementById("tab-link-1").classList.remove("active-link");
+            document.getElementById("tab-link-2").classList.remove("active-link");
+            document.getElementById("tab-link-3").classList.remove("active-link");
+            document.getElementById("tab-link-4").classList.remove("active-link");
+
+            document.getElementById(tablink).classList.add("active-link");
+
+            document.getElementById("Academics").classList.remove("active-tab");
+            document.getElementById("Education").classList.remove("active-tab");
+            document.getElementById("Experience").classList.remove("active-tab");
+            document.getElementById("Skills").classList.remove("active-tab");
+
+            document.getElementById(tabname).classList.add("active-tab");
+            //abhi aise hi daal de agar add karna hoga li toh jaise class change kari upar waise kardio class active ka display block baaki ka none
+
+        }
+
+    </script>
+    
+</body>
+</html>
